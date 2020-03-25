@@ -8,7 +8,6 @@
 		Constructor: Random ServiceTime (1-5)
 		Public Methods: getServiceTime, newMinute
  */
-
 import java.util.Random;
 
 public class PriorityCustomer {

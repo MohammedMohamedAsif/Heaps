@@ -6,21 +6,21 @@ import java.util.Random;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author moham
  */
 public class Driver {
-    
-public static void main(String[] args) {
+
+    public static void main(String[] args) {
 
 //Creating new queue object
         Heap priority = new Heap();
-        
+
         int totalCustomers = 0;
         int totalQueue = 0;
         int maxCustomers = 0;
+
         //Loops 60 times
         for (int i = 0; i < 60; i++) {
 

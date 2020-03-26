@@ -40,14 +40,14 @@ public class Driver {
             }
 
             //If service time for customer in the front of the line is < or = 0 remove customer 
-            if (!priority.isEmpty() && priority.first.getServiceTime <= 0) {
+            if (!priority.isEmpty() && priority.getFirst().getServiceTime() <= 0) {
                 priority.remove();
                 System.out.println("Customer is removed, queue length is now" + priority.getSize());
                 totalQueue -= 1;
             }
 
             if (!priority.isEmpty()) {
-                priority.first.decServiceTime();
+                priority.getFirst().decServiceTime();
             }
 
             System.out.println("-------------------------------------------------------------");
